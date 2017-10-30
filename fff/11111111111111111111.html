@@ -1,0 +1,32 @@
+<html>
+<body>
+<h2>通过 JSON 字符串来创建对象</h3>
+<p>
+First Name: <span id="fname"></span><br /> 
+Last Name: <span id="lname"></span><br /> 
+</p> 
+<script type="text/javascript">
+var arr=[34,2,12,89,653,4];
+function systemSort(array){
+ return array.sort(function(a,b){
+ return a-b;
+})
+}
+
+function bubbleSort(array){
+ var len=array.length,d;
+ for(var i=0;i<len;i++){
+  for(var j=0;j<len;j++){
+   if(array[i]>array[j])
+   d=array[j];
+   array[j]=array[i];
+   array[i]=d;
+  }
+ }
+return array;
+}
+
+alert(bubbleSort(arr))
+</script>
+</body>
+</html>
